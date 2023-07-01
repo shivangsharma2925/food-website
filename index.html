@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie.co</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginform.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="login-container" id="authform">
+    <img src="images/back.jpg">
+    <div class="wrapper2">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#" id="loginform">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="useremail" name="useremail"  autocomplete="off" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="userPassword" name="userPassword" required autocomplete="off">
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember Me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button  type="submit" id="signinbutton" class="btn"><b>sign in</b></button>
+                <div class="login-register">
+                    <p>Don't have an account?  <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#" id="logupform">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="username" name="username" autocomplete="off" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="useremailforsignup" name="useremail"  autocomplete="off" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="userPasswordforsignup" name="userPassword" required autocomplete="off">
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button  type="submit" id="signupbutton" class="btn"><b>Register</b></button>
+                <div class="login-register">
+                    <p>Already have an account?  <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    <div id="secretcontent">
+        <div id="container" class="container">
+            <div id="menu">
+                <div class="logo">
+                    <img src="images/aaoaurkhaao.jpg">
+                    <h3>AaoAurKhao</h3>
+                </div>
+                <div class="menu-item">
+                    <a href="#">about</a>
+                    <a href="#">services</a>
+                    <a href="#">your order</a>
+                    <a href="#">wishlist</a>
+                    <a href="#">address</a>
+                    <a href="#">help</a>
+                </div>
+            </div>
+            <div id="food-container">
+                <div id="header">
+                    <div class="address">
+                        <i class="fa fa-map-marker your-address" id="addyouraddress"> your address</i>
+                    </div>
+                    <div class="util">
+                        <i class="fa fa-search"> search</i>
+                        <i class="fa fa-tags"> offers</i>
+                        <i class="fa fa-cart-plus" id="addtocart"> 0 items</i>
+                    </div>
+                </div>
+                <div id="food-items">
+                    <div id="birayani">
+                        <p id="category-namea" class="category-name">Baba Biryani</p>
+                    </div>
+                    <div id="chicken">
+                        <p id="category-nameb" class="category-name">C'mon Chicken</p>
+                    </div>
+                    <div id="paneer">
+                        <p id="category-namec" class="category-name">Paneer Ka Prabhav</p>
+                    </div>
+                    <div id="chinese">
+                        <p id="category-named" class="category-name">Chatpata Chinese</p>
+                    </div>
+                </div>
+                <div id="cart-page" class="cart-toggle">
+                    <p id="cart-title">cart items</p>
+                    <p id="total-amount">total amount : $ 100</p>
+                    <table>
+                        <thead>
+                            <td>items</td>
+                            <td>name</td>
+                            <td>quantity</td>
+                            <td>price</td>
+                        </thead>
+                        <tbody id="table-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="cart">
+                <div class="taste-header">
+                    <div class="user">
+                        <button type="submit" id="signoutbutton" class="btns"><i class="fa fa-sign-out" aria-hidden="true"> Log-Out</i></button>
+                        <a href="contact.html" type="submit" id="contactMe" class="btns"><i class="fa fa-volume-control-phone" aria-hidden="true"> Contact Us</i></a>
+                    </div>
+                </div>
+                <div id="category-list">
+                    <p class="item-menu">go for hunt</p>
+                    <div class="border"></div>
+                    <div class="list-card">
+                        <img src="images/biryani/Chicken-Biryani-hyd.jpg">
+                        <a href="" class="list-name"><a href="#category-namea" class="filter">biryani</a></a>
+                    </div>
+                    <div class="list-card">
+                        <img src="images/chicken/Chicken-do-Pyaza.jpg">
+                        <a href="" class="list-name"><a href="#category-nameb"class="filter">chicken</a></a>
+                    </div>
+                    <div class="list-card">
+                        <img src="images/paneer/paneer-butter-masala.jpg">
+                        <a href="" class="list-name"><a href="#category-namec"class="filter">paneer</a></a>
+                    </div>
+                    <div class="list-card">
+                        <img src="images/chinese/chowmin.jpg">
+                        <a href="" class="list-name"><a href="#category-named"class="filter">chinese</a></a>
+                    </div>
+                </div>
+                <div id="checkout" class="cart-toggle">
+                    <p id="total-item">total item : 5</p>
+                    <p id="total-price">total amount : $ 50</p>
+                    <p id="delivery">free delivery above $ 40</p>
+                    <button class="cart-btn">checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+        } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCb60o32YHTvDcXS-gumgqRXnuF_9-QdNA",
+          authDomain: "authfun-4bd77.firebaseapp.com",
+          projectId: "authfun-4bd77",
+          storageBucket: "authfun-4bd77.appspot.com",
+          messagingSenderId: "964561558257",
+          appId: "1:964561558257:web:d8d7195b4811cb98ff2750"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const useremail = document.querySelector("#useremail");
+        const useremailforsignup = document.querySelector("#useremailforsignup");
+        const userpasswordforsignup = document.querySelector("#userPasswordforsignup");
+        const userPassword = document.querySelector("#userPassword");
+        const authform = document.querySelector("#authform");
+        const secretcontent = document.querySelector("#secretcontent");
+        const signupbutton = document.querySelector("#signupbutton");
+        const signinbutton = document.querySelector("#signinbutton");
+        const signoutbutton = document.querySelector('#signoutbutton');
+        
+        secretcontent.style.display = 'none';
+
+        const usersignup = async() => {
+            const signupemail = useremailforsignup.value;
+            const signuppassword = userpasswordforsignup.value;
+            // const name = "shivang";
+            createUserWithEmailAndPassword(auth,signupemail,signuppassword)
+            .then((usercredential)=>{
+                const user = usercredential.user;
+                console.log(user);
+                alert("account has been created!!");
+                setTimeout(function(){
+                    document.getElementById('username').value = '';
+                    document.getElementById('useremailforsignup').value = '';
+                    document.getElementById('userPasswordforsignup').value = '';
+                },2000);
+            })
+            .catch((error)=>{
+                const errorcode = error.code;
+                const errormessage  = error.message;
+                if(signuppassword.length<6){
+                    alert("password should be at least of 6 characters!!");
+                    document.getElementById('userPassword').value = '';
+                }
+                else{
+                    alert("email already exists, try with new email or login with your email");
+                    document.getElementById('username').value = '';
+                    document.getElementById('useremailforsignup').value = '';
+                    document.getElementById('userPasswordforsignup').value = '';
+                }
+                console.log(errorcode + errormessage);
+            })
+        }
+
+        const usersignin = async() => {
+            const signinemail = useremail.value;
+            const signinpassword = userPassword.value;
+            signInWithEmailAndPassword(auth,signinemail,signinpassword)
+            .then((usercredential)=>{
+                const user = usercredential.user;
+                alert("you have signed in successfully!");
+                setTimeout(function(){
+                    document.getElementById('useremail').value = '';
+                    document.getElementById('userPassword').value = '';
+                },2000);
+            })
+            .catch((error)=>{
+                const errorcode = error.code;
+                const errormessage  = error.message;
+                alert("This email does not exist with us, first register yourself");
+                document.getElementById('useremail').value = '';
+                document.getElementById('userPassword').value = '';
+                console.log(errorcode + errormessage);
+            })
+        }
+
+        const checkauthstate = async()=>{
+            onAuthStateChanged(auth,user=>{
+                if(user){
+                    authform.style.display = 'none';
+                    secretcontent.style.display = 'block';
+                }
+                else {
+                    authform.style.display = 'block';
+                    secretcontent.style.display = 'none';
+                }
+            })
+        }
+
+        const usersignout = async()=>{
+            await signOut(auth);
+        }
+
+        checkauthstate();
+
+        signupbutton.addEventListener('click',usersignup);
+        signinbutton.addEventListener('click',usersignin);
+        signoutbutton.addEventListener('click',usersignout);
+
+      </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+      <script src="javascript/loginform.js"></script>
+      <script src="javascript/index.js" type="module"></script>
+</body>
+</html>
