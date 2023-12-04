@@ -276,6 +276,7 @@ function decrementitem(){
             document.getElementById('checkout').classList.toggle('cart-toggle')
             flag = false
             alert("currently no items in the cart")
+            document.getElementById('category-list').style.display='block';
         }
 
     }
@@ -291,11 +292,20 @@ function totalamount(){
     document.getElementById('total-item').innerText = 'Total Item : ' + cartdata.length
     document.getElementById('total-price').innerText = 'Total Price :$ ' + sum
 }
+var isnone = true;
 
 document.getElementById('addtocart').addEventListener('click',carttoggle)
 
 function carttoggle(){
     if(cartdata.length>0){
+        if(isnone){
+            document.getElementById('category-list').style.display='none';
+            isnone=false;
+        }
+        else{
+            document.getElementById('category-list').style.display='block';
+            isnone = true;
+        }
         document.getElementById('food-items').classList.toggle('food-items')
         document.getElementById('category-list').classList.toggle('food-items')
         document.getElementById('cart-page').classList.toggle('cart-toggle')
@@ -305,6 +315,7 @@ function carttoggle(){
     }
     else{
         alert("currently no items in the cart")
+        document.getElementById('category-list').style.display='block';
     }
 }
 

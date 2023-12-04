@@ -258,6 +258,9 @@ body{
     transform: scale(1.2);
 }
 
+.list-card a{
+    color: black;
+}
 
 .list-card img{
     width: 50px;
@@ -276,8 +279,13 @@ body{
 #category-list{
     /* display: none; */
     position: fixed;
-    top: 80px;
+    top: 50px;
     width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+
 }
 
 .cart-toggle{
